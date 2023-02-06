@@ -1,0 +1,75 @@
+.single {
+  display: flex;
+  width: 97%;
+  .singleContainer {
+    flex: 6;
+    .top {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+
+      .left {
+        position: relative;
+        flex: 1;
+        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.47);
+        padding: 20px;
+        margin: 20px;
+
+        .editButton {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 5px;
+          font-size: 15px;
+          font-weight: bold;
+          color: black;
+          background-color: rgb(224, 193, 107);
+          border-radius: 0px 5px 0px 5px;
+        }
+        .item {
+          display: flex;
+          gap: 40px;
+          padding-top: 20px;
+
+          .itemImg {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+          .details {
+            .itemTitle {
+              margin-bottom: 10px;
+              color: #555;
+            }
+            .detailItem {
+              display: flex;
+              flex-direction: column;
+            }
+            .itemKey {
+              padding-bottom: 10px;
+              font-weight: bold;
+              font-size: 18px;
+              color: gray;
+            }
+            .itemValue {
+              padding-bottom: 10px;
+              font-weight: bold;
+              color: black;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .right {
+        flex: 2;
+      }
+    }
+  }
+  .title {
+    color: gray;
+
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
